@@ -1,0 +1,443 @@
+body{
+    font-family: "Arima", serif;
+    font-size:15px;
+    margin: 0;
+    padding: 0;
+}
+  
+
+/* here i am working on the header navigation bar */
+.navbar {
+  background-color: #007bff;
+}
+.navbar-nav .nav-item .nav-link {
+  color: black !important;
+}
+.navbar-toggler {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 22px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.navbar-toggler span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+}
+.dropdown-menu {
+  transition: all 0.3s ease-in-out;
+}
+.navbar-brand img {
+  transition: transform 0.3s ease;
+}
+.navbar-brand img:hover {
+  transform: scale(1.1);
+}
+/* Custom button styles */
+.btn-outline-primary {
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-primary {
+  border-radius: 30px;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+.btn-primary:hover {
+  background-color: #218838;
+  border-color: #218838;
+}
+  
+  /* This is the loading page for the three second */
+  #welcome-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    z-index: 1050;
+}
+
+.welcome-animation {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    animation: fadeInZoom 3s ease-in-out;
+}
+
+@keyframes fadeInZoom {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#main-content {
+    display: none;
+}
+  
+  /* This is the our clients testonomials box box css parts */
+    .testimonial-box {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      border: 2px solid #5504ea;
+      border-radius: 5px;
+      margin-bottom: 15px;
+  }
+  .testimonial-box img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 15px;
+  }
+  .testimonial-box .feedback {
+      width: 80%;
+  }
+  .rating {
+      color: #ff9f00;
+  }
+  /* here we write the code of the download static files */
+  .card-custom {
+      border: 2px solid #4CAF50; /* Green border */
+      border-radius: 10px;
+      text-align: center;
+      padding: 15px;
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .card img {
+      width: 24px;
+      height: 24px;
+    }
+  
+  /* This section of the code is contains the box of the about sections*/
+  .box {
+    padding: 20px;
+    color: rgb(11, 11, 11);
+    border-radius: 8px;
+    background-color: #0bbae1;
+  }
+  
+  /* This is the css code of page direction of the about us page */
+  .center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  /* for hovering of the cards */
+  .card1 {
+    width: 200px; /* Adjust the size of the card */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Default shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+  
+  .card1:hover {
+    transform: scale(1.05); /* Zoom effect (5% larger, ~10px) */
+    box-shadow: 0 0 15px rgba(128, 128, 128, 0.6); /* Grey shadow */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  /* for the sticky buttons */
+  .sticky-icons {
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  .sticky-icons a {
+    display: block;
+    margin: 10px 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  .whatsapp { background-color: #25D366; }
+  .call { background-color: #34b7f1; }
+  .mail { background-color: #d93025; }
+  
+  /* Here i am writing the about us section cvode part */
+  .card2 {
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .card2 img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px auto;
+  }
+  .social-links a {
+    margin: 0 5px;
+    color: #555;
+  }
+  .card2:hover {
+    transform: scale(1.05); /* Zoom effect (5% larger, ~10px) */
+    box-shadow: 0 0 15px rgba(128, 128, 128, 0.6); /* Grey shadow */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  /* Here i am writing the code of the career page */
+  .hero {
+    background: linear-gradient(to right,  #6a11cb, #2575fc) center/cover no-repeat;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+  }
+  .info-card:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s;
+  }
+  
+  /* here i am writing the code of the features part page */
+  .hero-section {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  .hero-section h1,
+  .hero-section p {
+    position: relative;
+    z-index: 2;
+  }
+  .features-cards .card {
+    transition: transform 0.3s ease;
+  }
+  .features-cards .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* here we are writing the code of the portfolio section  */
+  .pricing-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+ 
+/* Here we are creating the code of the thankyou page */
+/* Gradient Background for Searching */
+.searching-bg {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-you-bg {
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Searching Animation */
+.loader {
+  border: 8px solid #f0f5f4;
+  border-top: 8px solid #f40e21;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+/* Thank You Card Animation */
+.thank-you-card {
+  animation: fadeInScale 1s ease-out forwards;
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+@keyframes fadeInScale {
+  0% {
+      opacity: 0;
+      transform: scale(0.8);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+.icon {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.glow {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 
+               0 0 15px rgba(255, 255, 255, 0.6);
+}
+/* Here i am writing the code of the mobile application service page  */
+.portfolio-card1 {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  text-align: center;
+  padding: 2px;
+  margin-top:5px
+}
+.portfolio-card1 img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+/* Here the below available the code of the cyber security portfolio */
+.portfolioc-card {
+  height: 170px;
+  border: 1px solid #181717;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: #f8f9fa;
+}
+.portfolioc-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Here i am writing the code of the Digital marketing content */
+.portfoliod-card {
+    height: 230px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.portfoliod-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom {
+  width: 200px;
+  transition: all 0.3s ease-in-out;
+}
+.btn-custom:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* This is the code of the log admin page */
+.login-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+.form-control {
+  margin-bottom: 15px;
+}
+.btn-custom {
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn-custom:hover {
+  background: #0056b3;
+}
+
+
+/* publication page form of the website */
+.custom-container {
+  border: 2px solid #dc3545; /* Red border */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  max-width: 600px;
+  margin: auto;
+}
