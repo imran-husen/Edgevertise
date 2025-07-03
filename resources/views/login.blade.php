@@ -12,7 +12,6 @@
                     @csrf
                     <input type="email" name="email" class="form-control" placeholder="Email" required>
                     <input type="password" name="password" class="form-control" placeholder="Password" required>
-                    <input type="password" name="secret_code" class="form-control" placeholder="4-Digit Secret Code" maxlength="4" required>
                     <button type="submit" class="btn btn-custom btn-block w-100">Login</button>
                 </form>
             </div>

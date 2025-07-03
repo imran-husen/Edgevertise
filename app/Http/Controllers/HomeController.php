@@ -120,10 +120,9 @@ class HomeController extends Controller
         if ($request->isMethod('post')) {
             $data = $request->all();
     
-            if (isset($data['email'], $data['password'], $data['secret_code'])) {
+            if (isset($data['email'], $data['password'])) {
                 if ($data['email'] === "edgevertisepvt@gmail.com" &&
-                    $data['password'] === "India@24x7" &&
-                    $data['secret_code'] === "1992") {
+                    $data['password'] === "India@24x7"){
                         $clientData = Client::all();
                         $total_clients = Client::count();
                         $contact = contact::all();
